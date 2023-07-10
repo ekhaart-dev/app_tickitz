@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mulish&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Mulish', sans-serif;
+  }
+
+
+/* Header Style */
+
+.header {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 130px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.header .wrapper-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header .brand-name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.header .menu-head {
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu-head li {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.header .profil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+/* Section 1 */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 10px 130px;
+}
+
+.section {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.section h6 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #A0A3BD;
+}
+
+.section h2 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 70px;
+    color: #5F2EEA;
+}
+
+.section img {
+    padding-right: 80px;
+}
+
+/* Section 2 */
+
+.section-movie {
+    background-color: #F5F6F8;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    width: 100%;
+}
+
+.section-movie .movie-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 130px;
+}
+
+.section-movie .movie-head .title {
+    position: relative;
+    color: #5F2EEA;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.section-movie .movie-head .show-movie {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5F2EEA;
+    cursor: pointer;
+}
+
+.section-movie .movie-head .title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 25px;
+    width: 70%;
+    height: 3px;
+    background-color: #5F2EEA;
+}
+
+.section-movie .movie-card {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px 130px;
+    width: 100%;
+    overflow-x:hidden;
+    margin-top: 20px;
+}
+
+.section-movie .movie-card .card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.section-movie .movie-card #card-show {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 200px;
+    align-items: center;
+    gap: 10px;
+    z-index: 4;
+    box-shadow: 0px 16px 32px rgba(186, 186, 186, 0.3);
+    cursor: pointer;
+}
+
+.section-movie .movie-card #card-show h3 {
+    text-align: center;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.section-movie .movie-card #card-show button {
+    background-color: transparent;
+    width: 127px;
+    padding: 12px 27px;
+    border: 1px solid #5F2EEA;
+    border-radius: 4px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5F2EEA;
+    cursor: pointer;
+}
+
+/* Section 3 */
+
+.section-upcoming {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    width: 100%;
+}
+
+.section-upcoming .upcoming-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 130px;
+}
+
+.section-upcoming .upcoming-head .title {
+    position: relative;
+    color: #000;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.section-upcoming .upcoming-head .show-movie {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5F2EEA;
+    cursor: pointer;
+}
+
+.section-upcoming .month-upcoming {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px 130px;
+    overflow-x:hidden;
+}
+
+.section-upcoming .month-upcoming button {
+    background-color: transparent;
+    width: 127px;
+    padding: 12px 27px;
+    border: 1px solid #5F2EEA;
+    border-radius: 4px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5F2EEA;
+    cursor: pointer;
+}
+
+.section-upcoming .month-upcoming button:enabled {
+    background-color: #5F2EEA;
+    color: #fff;
+}
+
+.section-upcoming .upcoming-card {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px 130px;
+    overflow-x:hidden;
+    margin-top: 20px;
+}
+
+.section-upcoming .upcoming-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid #DEDEDE;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.section-upcoming .upcoming-card .card h3 {
+    margin-top: 24px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.section-upcoming .upcoming-card .card h6 {
+    margin-top: 8px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A0A3BD;
+}
+
+.section-upcoming .upcoming-card .card button {
+    margin-top: 40px;
+    padding: 8px 56px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: transparent;
+    color: #5F2EEA;
+    border: 1px solid #5F2EEA;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Section 4 */
+
+.section-subscribe {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 130px;
+    align-items: center;
+}
+
+.section-subscribe .wrapper {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(186, 186, 186, 0.3);
+    border-radius: 8px;
+    width: 70%;
+    align-items: center;
+    gap: 40px;
+    padding: 48px;
+}
+
+.section-subscribe .subscribe-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-subscribe .subscribe-title h5 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #4E4B66;
+}
+
+.section-subscribe .subscribe-title h2 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #5F2EEA;
+}
+
+.section-subscribe .subscribe-input {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.section-subscribe .subscribe-input input {
+    border: 2px solid #DEDEDE;
+    border-radius: 4px;
+    padding: 15px 160px 15px 24px;
+}
+
+.section-subscribe .subscribe-input button {
+    background: #5F2EEA;
+    color: #fff;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 4px;
+    padding: 17px 29px;
+}
+
+.section-subscribe .subscribe-desc {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6E7191;
+    width: 40%;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 130px;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.footer .wrapper-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-between;
+    width: 80%
+}
+
+.footer .wrapper-footer .brand-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+}
+
+.footer .wrapper-footer .brand-footer h6 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6E7191;
+}
+.footer .wrapper-footer .brand-footer img {
+    width: 150px;
+}
+
+.footer .wrapper-footer .menu-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer .wrapper-footer .menu-link ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6E7191;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.footer .wrapper-footer .sponsor-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer .wrapper-footer .sponsor-footer img {
+    width: 100px;
+}
+
+.footer .wrapper-footer .social-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer .wrapper-footer .social-footer a {
+    color: #6E7191;
+}
+
+.footer .copyright {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4E4B66;
+    padding: 47px;
+}
+
+@media screen and (max-width:1024px) {
+    /* Header */
+    .header .brand-name {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+    
+    }
+    .menu-head li {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+    .header .btn {
+        width: 90px;
+        padding: 10px 0px;
+        background-color: #5F2EEA;
+        border-radius: 4px;
+        color: #fff;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+    .header .brand-name img {
+        width: 100px;
+    }
+
+    /* Section 1 */
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .section h6 {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+    .section h2 {
+        font-weight: 800;
+        font-size: 30px;
+        margin: 0;
+        line-height: 35px;
+
+    }
+    .section img {
+        width: 250px;
+        padding-right: 0px;
+    }
+
+    /* Section 2 */
+    .section-movie .movie-head .title  {
+        font-size: 16px;
+        font-weight: 800;
+        position: relative;
+    }
+
+    .section-movie .movie-head .title::after {
+        bottom: -12px;
+        left: 10px;
+        width: 70%;
+        height: 3px;
+    }
+
+    .section-movie .movie-head .show-movie {
+        font-size: 14px;
+    }
+
+    /* Section 3 */
+    .section-upcoming .upcoming-head .title {
+        font-size: 16px;
+    }
+
+    .section-upcoming .upcoming-head .show-movie {
+        font-size: 14px;
+    }
+
+    /* Section 4 */
+    .section-subscribe .subscribe-title h5 {
+        font-size: 14px;
+    }
+    .section-subscribe .subscribe-title h2 {
+        font-size: 30px;
+    }
+    .section-subscribe .subscribe-input {
+        gap: 5px;
+    }
+    
+    .section-subscribe .subscribe-input input {
+        border: 2px solid #DEDEDE;
+        border-radius: 4px;
+        padding: 1px 60px 1px 11px;
+        margin: 0;
+        font-size: 12px;
+    }
+    
+    .section-subscribe .subscribe-input button {
+        font-size: 12px;
+        border-radius: 4px;
+        padding: 10px 29px;
+    }
+    .section-subscribe .subscribe-desc {
+        font-size: 12px;
+        color: #6E7191;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer .wrapper-footer .brand-footer {
+        width: 35%;
+    }
+    
+    .footer .wrapper-footer .brand-footer h6 {
+        font-size: 12px;
+    }
+    .footer .wrapper-footer .brand-footer img {
+        width: 100px;
+    }
+    
+    .footer .wrapper-footer .menu-link {
+        font-size: 16px;
+    }
+    
+    .footer .wrapper-footer .menu-link ul li {
+        font-size: 14px;
+    }
+    
+    .footer .wrapper-footer .sponsor-footer {
+        font-size: 16px;
+    }
+    
+    .footer .wrapper-footer .sponsor-footer img {
+        width: 70px;
+    }
+    
+    .footer .wrapper-footer .social-footer {
+        font-size: 16px;
+    }
+    
+    .footer .wrapper-footer .social-footer a {
+        color: #6E7191;
+        font-size: 12px;
+    }
+
+    .footer .wrapper-footer .social-footer img {
+        width: 20px;
+    }
+    
+    .footer .copyright {
+        font-size: 12px;
+        padding: 40px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 130px;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .footer .wrapper-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-between;
+        width: 100%
+    }
+
+}

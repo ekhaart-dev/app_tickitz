@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "muslish";
+  src: url("./assets/fonts/mulish.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "muslish", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sidebar-login {
+  background-image: url("https://res.cloudinary.com/dpn40glt3/image/upload/v1688425763/app_tickitz/img/banner_tq2f95.png");
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
